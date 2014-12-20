@@ -1,0 +1,28 @@
+extends layout
+block content
+    div(role="navigation").navbar.navbar-default
+        .container-fluid
+            //.navbar-header
+            a.navbar-brand(href='/').font3.red.center-block Bigdata
+    ul
+        mixin article(article)
+            h1.blog-title.font1.red  #{article.title}
+            div.
+            p.well #{article.content}
+            h2.font2 Related articles
+
+
+         each article, i in list
+               li
+                  if(i==0)
+                    +article(article)
+                  if(i>0)
+                    p #{i}.
+                        a.btn-link(href=article.title)=article.title
+         div
+            if(p > 1)
+               button.btn
+                  a.pager(href='?page=' + (p - 1)) Previous
+            if(p < 4)
+               button.btn
+                   a.pager(href='?page=' + (p+1)) Next
