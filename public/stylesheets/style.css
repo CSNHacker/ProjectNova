@@ -1,21 +1,26 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #000000;
+color: #ffffff;
+  
 }
 
 a {
   font-size: 15px;
-  color: #4f48c9;
+  color: #ffffff;
 }
 .red{
-  color: #a20f16;
+  color: #DD4814;
 }
 .font1{
   font-size:20px;
 }
 .font2{
   font-size:25px;
-  margin-bottom: 15px;
+
 }
 .font3{
   font-size:30px;
@@ -23,8 +28,9 @@ a {
 .blog-title {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: normal;
+
 }
 .pager1 {
   margin-bottom: 60px;
@@ -38,4 +44,20 @@ a {
   padding: 10px 20px;
   text-align: center;
   border-radius: 30px;
+}
+
+.jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #151515;
+}
+
+.round {
+  border-radius: 20px 20px 20px 20px;
+  size: 50%;
+border-top-left-radius: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 30px;
 }
