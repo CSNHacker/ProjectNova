@@ -42,7 +42,7 @@ router.get('/', function(req, res) {
 
 
        // var cluster=[0,7,2,11,10];
-        connection.query('SELECT a.title, a.content  FROM Cluster c, Article a where c.num=a.num and c.clusternum='+(cluster[Number(p)]),function(err,rows)     {
+        connection.query('SELECT a.title,a.content,a.link FROM Cluster c, Article a where c.num=a.num and c.clusternum='+(cluster[Number(p)]),function(err,rows)     {
 
             if(err)
                 console.log("Error Selecting : %s ",err );

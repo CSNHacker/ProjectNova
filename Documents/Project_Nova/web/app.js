@@ -13,8 +13,6 @@ var connection  = require('express-myconnection');
 var mysql = require('mysql');
 
 
-
-
 var routes = require('./routes/index');
 
 var app = express();
