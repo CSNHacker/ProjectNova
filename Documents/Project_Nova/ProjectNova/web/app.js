@@ -34,11 +34,11 @@ app.use(
 
     connection(mysql,{
 
-        host: 'projectnovatry.ca7v4yqqbrky.us-west-2.rds.amazonaws.com',
-        user: 'BigData',
-        password : 'bigdataanalysis',
+        host: '',
+        user: ''',
+        password : '',
         port : 3306, //port mysql
-        database:'ProjectNovaTry'
+        database:''
     },'request')
 
 );
